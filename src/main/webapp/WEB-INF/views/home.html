@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Home</title>
+</head>
+<body>
+	<a th:href="@{/socketJS}">socketJS</a>
+	Remember to add .withSocketJS() in registerWebSocketHandlers() in WebSocketConfig
+	<br />
+	<a th:href="@{/websocket}">websocket</a>
+	Remember to remove .withSocketJS() in registerWebSocketHandlers() in WebSocketConfig
+</body>
+</html>
