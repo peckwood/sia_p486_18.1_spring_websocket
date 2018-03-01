@@ -21,7 +21,6 @@ public class MacroHandler extends AbstractWebSocketHandler{
 	protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
 		System.out.println("Received message: " + message.getPayload());
 		Thread.sleep(1000);
-		
 		session.sendMessage(new TextMessage("Polo!"));
 	}
 }

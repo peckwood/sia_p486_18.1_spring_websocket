@@ -1,4 +1,6 @@
-### Just run and homepage will guide you
+### How to Run
+
+Just run and homepage will guide you
 
 ### How to use WebJars as static resources
 
@@ -18,13 +20,13 @@ registry
 1. In Spring, add `.withSockJS()` to WebSocketHandler
 2. in html, import `sockjs.min.js`
 3. In Thymeleaf, change from
-```java
+```javascript
 var contextPath = [[@{/}]];
 var url = 'ws://' + window.location.host + contextPath +'macro';
 var sock = new WebSocket(url);
 ```
 to
-```java
+```javascript
 var contextPath = [[@{/}]];
 var sock = new SockJS(contextPath +'macro');
 ```
